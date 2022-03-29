@@ -1,2 +1,20 @@
 <navigation></navigation>
-<p>Hello World</p>
+
+<!-- Container -->
+<div class="home-page">
+    <!-- Header image -->
+    <div>
+
+    </div>
+
+    <!-- Product grid -->
+    <div class="products-container">
+        <h1>Products</h1>
+        <div class="product-grid">
+            <div *ngFor="let product of products" class="product-square">
+                <img [src]="product.pictureUrls[0]" />
+                <p>{{product.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
